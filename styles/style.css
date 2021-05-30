@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+}
+
+:root {
+  --first-color: #373f51;
+  --second-color: #d8dbe2;
+  --third-color: #58a4b0;
+  --fourth-color: #1b1b1e;
+  --fifth-color: #a9bcd0;
+  --sixth-color: #2d2d31;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-color);
+  height: 10vh;
+}
+
+.header-text {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  color: var(--second-color);
+}
+
+.nav {
+  background-color: var(--fifth-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vh;
+  position: sticky;
+}
+
+.nav-header {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.add-task {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.add {
+  font-size: 1.8rem;
+  border: none;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.add:hover {
+  background-color: var(--sixth-color);
+  cursor: pointer;
+}
+
+.main {
+  background-color: var(--fifth-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75vh;
+  color: var(--first-color);
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Rajdhani", sans-serif;
+  color: var(--second-color);
+  background-color: #264653;
+  width: 20vw;
+}
+
+.li {
+  font-family: "Rajdhani", sans-serif;
+  color: var(--second-color);
+  font-size: 1.7rem;
+  color: #264653;
+  list-style: none;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 20vw;
+  background-color: var(--first-color);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.to-do {
+  background-color: #f4a261;
+}
+
+.in-progress {
+  background-color: #e9c46a;
+}
+
+.done {
+  background-color: #2a9d8f;
+}
+
+.deleteBtn {
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  border-radius: 50px;
+  margin-left: 5px;
+  background-color: #264653;
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: red;
+  transition: 0.3s;
+}
+
+.in-progress-btn {
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  border-radius: 50px;
+  margin-left: 5px;
+  background-color: #264653;
+  transition: 0.3s;
+}
+
+.in-progress-btn:hover {
+  cursor: pointer;
+  background-color: #e9c46a;
+  color: var(--first-color);
+  transition: 0.3s;
+}

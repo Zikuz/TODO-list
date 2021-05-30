@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        <span class="header-text">TO-DO LIST</span>
+    </header>
+    <nav class="nav">
+        <span class="nav-header">ADD TASK</span>
+        <div class="input-container">
+            <input type="text" class="add-task" placeholder="Enter task...">
+            <button class="add">+</button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="to-do list-container">
+            <span class="main-header">TO_DO</span>
+            <div>
+                <ul class="list-todo"></ul>
+            </div>
+        </div>
+        
+        <div class="in-progress list-container">
+            <span class="main-header">IN_PROGRESS</span>
+
+            <ul class="list-inprogress"></ul>
+        </div>
+        
+        <div class="done list-container">
+            <span class="main-header">DONE</span>
+            
+            <ul class="list-done"></ul>
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
