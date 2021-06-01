@@ -91,14 +91,15 @@ body {
   font-family: "Rajdhani", sans-serif;
   color: var(--second-color);
   background-color: #264653;
-  width: 20vw;
+  width: 28vw;
 }
 
 .li {
   font-family: "Rajdhani", sans-serif;
   color: var(--second-color);
   font-size: 1.7rem;
-  color: #264653;
+  /* color: #264653; */
+  color: white;
   list-style: none;
 }
 
@@ -107,7 +108,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 60vh;
-  width: 20vw;
+  width: 28vw;
   background-color: var(--first-color);
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -128,36 +129,80 @@ body {
 }
 
 .deleteBtn {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  height: 1.8rem;
   border: none;
   background-color: var(--fourth-color);
-  color: var(--second-color);
-  border-radius: 50px;
+  color: white;
+  border-radius: 8px;
   margin-left: 5px;
   background-color: #264653;
   transition: 0.3s;
+  font-family: "Rajdhani", sans-serif;
+  background-color: rgb(255, 19, 19);
 }
 
 .deleteBtn:hover {
   cursor: pointer;
-  background-color: red;
+  background-color: #264653;
   transition: 0.3s;
+  color: rgb(255, 19, 19);
 }
 
 .in-progress-btn {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  height: 1.8rem;
   border: none;
   background-color: var(--fourth-color);
   color: var(--second-color);
   border-radius: 50px;
   margin-left: 5px;
-  background-color: #264653;
+  color: white;
+  background-color: #e9c46a;
   transition: 0.3s;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .in-progress-btn:hover {
   cursor: pointer;
-  background-color: #e9c46a;
-  color: var(--first-color);
+  color: #e9c46a;
+  background-color: #264653;
   transition: 0.3s;
+}
+
+.doneBtn {
+  font-size: 1.4rem;
+  height: 1.8rem;
+  border: none;
+  background-color: var(--fourth-color);
+  color: var(--second-color);
+  border-radius: 50px;
+  margin-left: 5px;
+  color: white;
+  background-color: rgb(72, 180, 0);
+  transition: 0.3s;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.doneBtn:hover {
+  cursor: pointer;
+  color: rgb(72, 180, 0);
+  background-color: #264653;
+  transition: 0.3s;
+}
+
+.list-todo,
+.list-inprogress,
+.list-done {
+  width: 28vw;
+  word-wrap: break-word;
+  color: #264653;
+  /* color: white; */
+  /* list-style: none; */
+}
+
+.li-done {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgb(218, 216, 216);
 }
