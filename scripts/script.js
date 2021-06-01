@@ -5,7 +5,7 @@ const listInProgress = document.querySelector('.list-inprogress')
 const listDone = document.querySelector('.list-done')
 
 addBtn.addEventListener('click', function() {
-    if (inputTask.value != 'a' && inputTask.value != ' ') {
+    if (inputTask.value != '' && inputTask.value != ' ') {
         listToDo.innerHTML += `
         <li><span class='li'>${inputTask.value}</span> <button class='deleteBtn' onClick='deleteLi(this)'>X</button><button class='in-progress-btn' onClick='moveToInProgress(this)'>O</button></li>`;
         inputTask.value = ''
