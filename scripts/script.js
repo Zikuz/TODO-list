@@ -7,7 +7,7 @@ const listDone = document.querySelector('.list-done')
 addBtn.addEventListener('click', function() {
     if (inputTask.value != '' && inputTask.value != ' ') {
         listToDo.innerHTML += `
-        <li><span class='li'>${inputTask.value}</span><div class='icons1'><img src='/images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'><img src='/images/in-progress.svg' class='in-progress-btn' onClick='moveToInProgress(this)'><img src='/images/done.svg' class='done-btn' onClick='doneTask(this)'></div></li>`;
+        <li><span class='li'>${inputTask.value}</span><div class='icons1'><img src='images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'><img src='images/in-progress.svg' class='in-progress-btn' onClick='moveToInProgress(this)'><img src='images/done.svg' class='done-btn' onClick='doneTask(this)'></div></li>`;
         inputTask.value = ''
     } else {
         inputTask.value = ''
@@ -23,12 +23,12 @@ deleteLi = (e) => {
 }
 
 moveToInProgress = (e) => {
-    listInProgress.innerHTML += `<li><span class='li'>${e.parentElement.parentElement.childNodes[0].innerText} </span><div class='icons2'><img src='/images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'><img src='/images/done.svg' class='done-btn' onClick='doneTask(this)'></div></li>`
+    listInProgress.innerHTML += `<li><span class='li'>${e.parentElement.parentElement.childNodes[0].innerText} </span><div class='icons2'><img src='images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'><img src='images/done.svg' class='done-btn' onClick='doneTask(this)'></div></li>`
     e.parentElement.parentElement.remove();
 }
 
 doneTask = (e) => {
-    listDone.innerHTML += `<li><span class='li task-done'>${e.parentElement.parentElement.childNodes[0].innerText} </span><div class='icons3'><img src='/images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'></div></li>`
+    listDone.innerHTML += `<li><span class='li task-done'>${e.parentElement.parentElement.childNodes[0].innerText} </span><div class='icons3'><img src='images/delete.svg' class='deleteBtn' onClick='deleteLi(this)'></div></li>`
     e.parentElement.parentElement.remove();
 }
 
