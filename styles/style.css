@@ -64,15 +64,15 @@ body {
 .add {
   font-size: 1.8rem;
   border: none;
-  background-color: var(--fourth-color);
+  background-color: #264653;
   color: var(--second-color);
   border-radius: 5px;
   margin-left: 5px;
 }
 
 .add:hover {
-  background-color: var(--sixth-color);
   cursor: pointer;
+  background-color: var(--first-color);
 }
 
 .main {
@@ -80,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 75vh;
+  min-height: 70vh;
   color: var(--first-color);
 }
 
@@ -94,22 +94,44 @@ body {
   width: 28vw;
 }
 
+li {
+  line-height: 3em;
+  border-bottom: 1px #264653 solid;
+  height: 200%;
+  width: 90%;
+}
+
 .li {
   font-family: "Rajdhani", sans-serif;
   color: var(--second-color);
   font-size: 1.7rem;
-  /* color: #264653; */
   color: white;
   list-style: none;
+}
+
+.icons1 {
+  width: 20%;
+  float: right;
+}
+
+.icons2 {
+  width: 15%;
+  float: right;
+}
+
+.icons3 {
+  width: 8%;
+  float: right;
 }
 
 .list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
   width: 28vw;
+  min-height: 64vh;
   background-color: var(--first-color);
+  margin-bottom: 50px;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -128,67 +150,16 @@ body {
   background-color: #2a9d8f;
 }
 
-.deleteBtn {
-  font-size: 1.4rem;
-  height: 1.8rem;
-  border: none;
-  background-color: var(--fourth-color);
-  color: white;
-  border-radius: 8px;
+.deleteBtn,
+.in-progress-btn,
+.done-btn {
   margin-left: 5px;
-  background-color: #264653;
-  transition: 0.3s;
-  font-family: "Rajdhani", sans-serif;
-  background-color: rgb(255, 19, 19);
 }
 
-.deleteBtn:hover {
+.deleteBtn:hover,
+.in-progress-btn:hover,
+.done-btn:hover {
   cursor: pointer;
-  background-color: #264653;
-  transition: 0.3s;
-  color: rgb(255, 19, 19);
-}
-
-.in-progress-btn {
-  font-size: 1.4rem;
-  height: 1.8rem;
-  border: none;
-  background-color: var(--fourth-color);
-  color: var(--second-color);
-  border-radius: 50px;
-  margin-left: 5px;
-  color: white;
-  background-color: #e9c46a;
-  transition: 0.3s;
-  font-family: "Rajdhani", sans-serif;
-}
-
-.in-progress-btn:hover {
-  cursor: pointer;
-  color: #e9c46a;
-  background-color: #264653;
-  transition: 0.3s;
-}
-
-.doneBtn {
-  font-size: 1.4rem;
-  height: 1.8rem;
-  border: none;
-  background-color: var(--fourth-color);
-  color: var(--second-color);
-  border-radius: 50px;
-  margin-left: 5px;
-  color: white;
-  background-color: rgb(72, 180, 0);
-  transition: 0.3s;
-  font-family: "Rajdhani", sans-serif;
-}
-
-.doneBtn:hover {
-  cursor: pointer;
-  color: rgb(72, 180, 0);
-  background-color: #264653;
-  transition: 0.3s;
 }
 
 .list-todo,
@@ -197,12 +168,49 @@ body {
   width: 28vw;
   word-wrap: break-word;
   color: #264653;
-  /* color: white; */
-  /* list-style: none; */
 }
 
-.li-done {
+.task-done {
   text-decoration: line-through;
   font-style: italic;
   color: rgb(218, 216, 216);
+}
+
+img {
+  width: 1.2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--fifth-color);
+  height: 5vh;
+}
+
+.input-animation {
+  color: rgb(255, 0, 0);
+  animation: inputAnimation 0.6s;
+}
+
+@keyframes inputAnimation {
+  0% {
+    margin-left: 5px;
+  }
+  20% {
+    margin-left: -5px;
+  }
+  40% {
+    margin-left: 5px;
+  }
+  60% {
+    margin-left: -5px;
+  }
+  80% {
+    margin-left: 5px;
+  }
+  100% {
+    margin-left: 0;
+  }
 }
